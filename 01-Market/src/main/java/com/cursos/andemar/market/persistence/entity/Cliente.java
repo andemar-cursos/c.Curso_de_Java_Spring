@@ -1,9 +1,7 @@
 package com.cursos.andemar.market.persistence.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "clientes")
@@ -29,6 +27,10 @@ public class Cliente {
 
     @Column(name = "correo_electronico")
     private String correoElectronico;
+
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compras;
 
 
     public String getIdCliente() {
@@ -77,5 +79,13 @@ public class Cliente {
 
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
     }
 }
