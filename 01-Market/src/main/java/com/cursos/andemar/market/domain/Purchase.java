@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Purchase {
 
-    private int puchaseId;
+    private int purchaseId;
 
     private String clientId;
 
@@ -17,15 +17,15 @@ public class Purchase {
 
     private String state;
 
-    private List<PurchaseItem> item;
+    private List<PurchaseItem> items;
 
 
-    public int getPuchaseId() {
-        return puchaseId;
+    public int getPurchaseId() {
+        return purchaseId;
     }
 
-    public void setPuchaseId(int puchaseId) {
-        this.puchaseId = puchaseId;
+    public void setPurchaseId(int purchaseId) {
+        this.purchaseId = purchaseId;
     }
 
     public String getClientId() {
@@ -68,11 +68,11 @@ public class Purchase {
         this.state = state;
     }
 
-    public List<PurchaseItem> getItem() {
-        return item;
+    public List<PurchaseItem> getItems() {
+        return items;
     }
 
-    public void setItem(List<PurchaseItem> item) {
-        this.item = item;
+    public void setItems(List<PurchaseItem> items) {
+        this.items = items;
     }
 }
