@@ -5,7 +5,7 @@ import com.cursos.andemar.market.domain.Purchase;
 import java.util.List;
 import java.util.Optional;
 
-public interface PuchaseRepository {
+public interface PurchaseRepository {
 
     List<Purchase> getALl();
 
